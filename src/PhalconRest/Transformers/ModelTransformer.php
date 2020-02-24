@@ -218,6 +218,7 @@ class ModelTransformer extends Transformer
 
         switch ($type) {
 
+            case Column::TYPE_TINYINTEGER:
             case Column::TYPE_INTEGER:
             case Column::TYPE_BIGINTEGER: {
 

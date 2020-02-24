@@ -4,7 +4,7 @@
     "require": {
         "php": ">=7.1",
         "ext-phalcon": ">=4.0.0",
-        "redound/phalcon-api": "dev-development",
+        "redound/phalcon-api": "^3.0.0",
         "phalcon/incubator": "^3.4"
     },
     "suggest": {

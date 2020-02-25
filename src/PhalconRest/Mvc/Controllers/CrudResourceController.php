@@ -240,7 +240,11 @@ class CrudResourceController extends ResourceController
                 break;
 
             case PostedDataMethods::JSON_BODY:
-                $postedData = $this->request->getJsonRawBody(true);
+                try {
+                    $postedData = $this->request->getJsonRawBody(true);
+                } catch (\InvalidArgumentException $e) {
+                    $postedData = false;
+                }
                 break;
 
             case PostedDataMethods::AUTO:
